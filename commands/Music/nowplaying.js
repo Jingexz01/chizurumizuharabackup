@@ -15,7 +15,7 @@ module.exports = {
     return message.channel.send({
      embed: {
       color: 16734039,
-      description: "❌ | This is nothing playing right now",
+      description: "There is nothing playing right now. Maybe you mean `\#play`/",
      },
     });
    }
@@ -53,7 +53,7 @@ module.exports = {
     return message.channel.send(nowPlaying);
    }
    if (ms > 0 && ms < 10000) {
-    nowPlaying.addField("\u200b", "**``[" + progressbar.filledBar(ms == 0 ? seek : ms, seek, 25, "🔘", "▬")[0] + "]``**\n**" + "\n[" + new Date(seek * 1000).toISOString().substr(11, 8) + " / " + (ms == 0 ? " ◉ LIVE" : new Date(ms * 1000).toISOString().substr(11, 8)) + "]**" + "\n" + "\n **Time Remaining:**" + "``" + new Date(left * 1000).toISOString().substr(11, 8) + "``", false);
+    nowPlaying.addField("\u200b", "**``[" + progressbar.filledBar(ms == 0 ? seek : ms, seek, 25, "▬", "🔘")[0] + "]``**\n**" + "\n[" + new Date(seek * 1000).toISOString().substr(11, 8) + " / " + (ms == 0 ? " ◉ LIVE" : new Date(ms * 1000).toISOString().substr(11, 8)) + "]**" + "\n" + "\n **Time Remaining:**" + "``" + new Date(left * 1000).toISOString().substr(11, 8) + "``", false);
     return message.channel.send(nowPlaying);
    }
   } catch (err) {
@@ -61,7 +61,7 @@ module.exports = {
    message.channel.send({
     embed: {
      color: 16734039,
-     description: "Something went wrong... :cry:",
+     description: "Sorry something went wrong, Please try again later",
     },
    });
   }
