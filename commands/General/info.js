@@ -20,7 +20,7 @@ module.exports = {
    const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
    const embed = new Discord.MessageEmbed() // Prettier()
     .setTitle(
-     `📄 Information for developers`,
+     `Bot Status - Bot Developer Status`,
      message.guild.iconURL({
       dynamic: true,
       format: "png",
@@ -28,7 +28,7 @@ module.exports = {
     )
     .setColor("RANDOM")
     .setDescription(`My global prefix is: \`${process.env.PREFIX}\`\n`)
-    .addField("<:owner:856161806199947285> Developer", `${config.author} \[[Website](${config.authorwebsite})\]`)
+    .addField("<a:verified:857203241980264458> Developer", `${config.author} \[Website](${config.authorwebsite})`)
     .setThumbnail(
      client.user.displayAvatarURL({
       dynamic: true,
