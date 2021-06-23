@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports = {
  name: "prune",
- aliases: ["clear"],
+ aliases: ["clear, delete, purge"],
  description: "Removes up to 100 messages",
  category: "Moderation",
  usage: "prune <amount>",
@@ -122,7 +122,7 @@ module.exports = {
    message.channel.send({
     embed: {
      color: 16734039,
-     description: "Something went wrong... :cry:",
+     description: "Sorry something went wrong, Please try again later",
     },
    });
    console.log(err);
