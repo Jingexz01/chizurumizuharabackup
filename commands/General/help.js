@@ -103,8 +103,8 @@ module.exports = {
       .setColor("RANDOM")
       .setTimestamp()
       .addField("Category", `\`${cmd.category}\``)
-      .addField("Description", `\`${cmd.description}\``)
       .addField("Usage", `\`${prefix} ${cmd.usage}\``)
+      .addField("Description", `\`${cmd.description}\``)
       .addField("Aliases", `\`${alliaseslist}\``)
       // .setDescription("Category: `" + cmd.category + "`\n Description: `" + cmd.description + "`\n Usage: `" + prefix + " " + cmd.usage + "`\n Aliases: `" + alliaseslist + "`")
       .setFooter(
@@ -122,7 +122,7 @@ module.exports = {
    message.lineReply({
     embed: {
      color: 16734039,
-     description: "Something went wrong, Please try again later.",
+     description: "Sorry something went wrong, Please try again later.",
     },
    });
   }
