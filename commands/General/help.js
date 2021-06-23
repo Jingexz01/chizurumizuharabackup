@@ -45,10 +45,10 @@ module.exports = {
       icon = ":moneybag:";
      }
      if (id == "Utility") {
-      icon = ":toolbox:";
+      icon = ":tools:";
      }
      if (id == "Image") {
-      icon = ":frame_photo:";
+      icon = "::";
      }
      if (id == "NSFW") {
       icon = ":smirk:";
@@ -122,7 +122,7 @@ module.exports = {
    message.lineReply({
     embed: {
      color: 16734039,
-     description: "Something went wrong... :cry:",
+     description: "Something went wrong, Please try again later.",
     },
    });
   }
