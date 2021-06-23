@@ -27,8 +27,8 @@ module.exports = {
    }
    if (message.member.hasPermission("MANAGE_GUILD")) {
     const embed = new Discord.MessageEmbed() // Prettier()
-     .setTitle("<a:sucess:759354039242063903> Yay!")
-     .setDescription("🔗 Your server link: " + process.env.DOMAIN + "/dashboard/" + message.guild.id + "\n🔗 Dashboard link: " + process.env.DOMAIN)
+     .setTitle("<:blush:> Yay!")
+     .setDescription("🔗 Your server link: " + process.env.DOMAIN + "/dashboard/" + message.guild.id + "\n🔗 Dashboard link: https://chizuru-mizuhara-database.herokuapp.com/dashboard")
      .setTimestamp()
      .setColor("RANDOM")
      .setFooter(
@@ -60,7 +60,7 @@ module.exports = {
    message.lineReply({
     embed: {
      color: 16734039,
-     description: "Something went wrong... :cry:",
+     description: "Sorry something went wrong, Please try again later.",
     },
    });
   }
