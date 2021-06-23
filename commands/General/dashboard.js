@@ -43,7 +43,7 @@ module.exports = {
    } else {
     const embed = new Discord.MessageEmbed() // Prettier()
      .setTitle("<:blush:> Yay!")
-     .setDescription("🔗 Our dashboard link: " https://chizuru-mizuhara-database.herokuapp.com/dashboard)
+     .setDescription("🔗 Our dashboard link: https://chizuru-mizuhara-database.herokuapp.com/dashboard")
      .setTimestamp()
      .setColor("RANDOM")
      .setFooter(
