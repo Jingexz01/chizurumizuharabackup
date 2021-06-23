@@ -76,10 +76,10 @@ module.exports = {
      giveaway: " ",
      giveawayEnded: " ",
      timeRemaining: "Time remaining: **{duration}**",
-     inviteToParticipate: "React with <a:giveaway:843845378352873492> to participate!",
+     inviteToParticipate: "React with <:tada:> to participate!",
      winMessage: "Congratulations, {winners}! You won **{prize}**!\n{messageURL}",
-     embedFooter: "Majo.exe",
-     noWinner: "Giveaway cancelled, no valid participations.",
+     embedFooter: "Chizuru Mizuhara#4525",
+     noWinner: "Giveaway cancelled, no valid participants.",
      hostedBy: "Hosted by: {user}",
      winners: "winner(s)",
      endedAt: "Ended at",
@@ -112,7 +112,7 @@ module.exports = {
    message.lineReply({
     embed: {
      color: 16734039,
-     description: "Something went wrong... :cry:",
+     description: "Sorry something went wrong, Please try again later.",
     },
    });
   }
