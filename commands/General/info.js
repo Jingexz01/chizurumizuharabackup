@@ -28,7 +28,7 @@ module.exports = {
     )
     .setColor("RANDOM")
     .setDescription(`My global prefix is: \`${process.env.PREFIX}\`\n`)
-    .addField("<a:verified:857203241980264458> Developer", `${config.author} \[Website](${config.authorwebsite})`)
+    .addField("<a:verified:857203241980264458> Developer", `${config.author} \[[Website](${config.authorwebsite})\]`)
     .setThumbnail(
      client.user.displayAvatarURL({
       dynamic: true,
