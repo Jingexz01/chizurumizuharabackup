@@ -42,8 +42,8 @@ module.exports = {
     message.lineReply(embed);
    } else {
     const embed = new Discord.MessageEmbed() // Prettier()
-     .setTitle("<a:sucess:759354039242063903> Yay!")
-     .setDescription("🔗 Our dashboard link: " + process.env.DOMAIN)
+     .setTitle("<:blush:> Yay!")
+     .setDescription("🔗 Our dashboard link: " https://chizuru-mizuhara-database.herokuapp.com/dashboard)
      .setTimestamp()
      .setColor("RANDOM")
      .setFooter(
