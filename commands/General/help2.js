@@ -5,11 +5,11 @@ const prefix = process.env.PREFIX;
 
 module.exports = {
  name: "chelp",
- aliases: ["h2", "commands2, command2"],
+ aliases: ["ch", "ccommands"],
  category: "General",
- description: "Displays the command info.",
+ description: "Displays the information on how to use the specified command.",
  timeout: "10000",
- usage: "help2 [command]",
+ usage: "chelp [command]",
  run: async (client, message, args) => {
   try {
    if (args[0]) {
@@ -29,29 +29,29 @@ module.exports = {
     categories = [...new Set(client.commands.map((cmd) => cmd.category))];
     for (const id of categories) {
      const category = client.commands.filter((cmd) => cmd.category === id);
-     if (id == "Economy") {
-      icon = ":moneybag:";
+     if (id == "General") {
+      icon = ":bricks:";
      }
-     if (id == "Utility") {
+     if (id == "Moderation") {
       icon = ":hammer:";
      }
      if (id == "Fun") {
       icon = ":rofl:";
      }
      if (id == "Music") {
-      icon = ":musical_note:";
+      icon = ":notes:";
      }
-     if (id == "General") {
-      icon = ":bulb:";
+     if (id == "Economy") {
+      icon = ":moneybag:";
      }
-     if (id == "Moderation") {
-      icon = ":tools:";
+     if (id == "Utility") {
+      icon = ":toolbox:";
+     }
+     if (id == "Image") {
+      icon = ":frame_photo:";
      }
      if (id == "NSFW") {
       icon = ":smirk:";
-     }
-     if (id == "Image") {
-      icon = ":frame_with_picture:";
      }
      if (!id) {
       icon = ":grey_question:";
@@ -76,7 +76,7 @@ module.exports = {
    function getCMD(client, message, input) {
     const embed = new Discord.MessageEmbed(); // Prettier();
     const cmd = client.commands.get(input.toLowerCase()) || client.commands.get(client.aliases.get(input.toLowerCase()));
-    const info = "No information found for command `" + input.toLowerCase() + "`!";
+    const info = "❌ | No information found for command `" + input.toLowerCase() + "`!";
     if (!cmd) {
      try {
       return message.lineReply({
@@ -89,7 +89,7 @@ module.exports = {
       message.lineReply({
        embed: {
         color: 16734039,
-        description: "No information found",
+        description: "❌ | No information found",
        },
       });
      }
@@ -103,8 +103,8 @@ module.exports = {
       .setColor("RANDOM")
       .setTimestamp()
       .addField("Category", `\`${cmd.category}\``)
-      .addField("Usage", `\`${prefix} ${cmd.usage}\``)
       .addField("Description", `\`${cmd.description}\``)
+      .addField("Usage", `\`${prefix} ${cmd.usage}\``)
       .addField("Aliases", `\`${alliaseslist}\``)
       // .setDescription("Category: `" + cmd.category + "`\n Description: `" + cmd.description + "`\n Usage: `" + prefix + " " + cmd.usage + "`\n Aliases: `" + alliaseslist + "`")
       .setFooter(
