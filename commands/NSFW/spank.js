@@ -8,10 +8,10 @@ module.exports = {
  category: "NSWF",
  usage: "spank <user>",
  run: async (client, message, args) => {
-  const user = (await message.mentions.members.first()) || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find((r) => r.user.username.toLowerCase().includes() === args.join(" ").toLocaleLowerCase()) || message.guild.members.cache.find((r) => r.displayName.toLowerCase().includes() === args.join(" ").toLocaleLowerCase());
-  (async () => {
+    (async () => {
    try {
     if (!message.channel.nsfw) {
+     const user = (await message.mentions.members.first()) || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find((r) => r.user.username.toLowerCase().includes() === args.join(" ").toLocaleLowerCase()) || message.guild.members.cache.find((r) => r.displayName.toLowerCase().includes() === args.join(" ").toLocaleLowerCase());
      const nsfwembed = new Discord.MessageEmbed()
       .setColor("#FF5757")
       .setDescription("💢 | You can use this command only in an NSFW Channel!")
