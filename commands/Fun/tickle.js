@@ -14,7 +14,7 @@ module.exports = {
     return message.lineReply({
      embed: {
       color: 16734039,
-      description: "❌ | Mention a valid member of this server!",
+      description: "Mention a valid member of this server!",
      },
     });
    }
@@ -22,7 +22,7 @@ module.exports = {
     return await message.lineReply({
      embed: {
       color: 16734039,
-      description: "❌ | You cant tickle yourself!",
+      description: "You cant tickle yourself!",
      },
     });
    }
@@ -31,7 +31,7 @@ module.exports = {
     const body = await response.json();
     const embed = await new Discord.MessageEmbed() // Prettier()
      .setColor("RANDOM")
-     .setTitle(member.username + " just got tickled by " + message.author.username)
+     .setTitle(user.username + " just got tickled by " + message.author.username)
      .setFooter(
       "._. | Requested by " + `${message.author.username}`,
       message.author.displayAvatarURL({
@@ -47,7 +47,7 @@ module.exports = {
    message.lineReply({
     embed: {
      color: 16734039,
-     description: "Something went wrong... :cry:",
+     description: "Sorry something went wrong, Please try again later.",
     },
    });
   }
