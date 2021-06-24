@@ -23,8 +23,7 @@ module.exports = {
     const embed = new Discord.MessageEmbed() // Prettier()
      .setAuthor("Help", message.guild.iconURL())
      .setColor("RANDOM")
-     .setTimestamp()
-     .addField(
+     .addFields(
          { name: 'Bot Commands', value: 'Overall Bot Commands' },
          { name: ':tools:Moderation Commands', value: '\`Ban\, Check-leave\, Check-log\, Check-welcome\, del-leave\, del-log\, del-welcome\, id\, kick\, prune\, say\, set-leave\, set-log\, set-welcome\, unban', inline: true },
          { name: '💬General', value: '\`Dashboard\, dependecies\, eval\, help\, info\, invite\, ping\, servers\, shell\, suggest\, uptime', inline: true },
@@ -32,6 +31,7 @@ module.exports = {
          { name: ':frame_with_picture:Image', value: '\`3000years\, affect\, approved\, beautiful\, blur\, cat\, changemymind\, circle\, contrast\, distort\, dog\, facepalm\, fire\, frame\, gay\, glass\, glitch\, heaven\, hitler\, invert\, jail\, jokeoverhead\, magik\, moustache\, ohno\, pixelize\, posterize\, reject\, rip\, sad\, scary\, sepia\, shit\, triggered\, trash\, utatoo\, wanted\, wasted', inline: true }
               )
       .addField(":grey_question: Command Information", `${prefix} help <command>`)
+      .setTimestamp()
       .setFooter(
      "Requested by " + `${message.author.username}` + " | " + `${client.commands.size}` + " Commands",
      message.author.displayAvatarURL({
