@@ -31,7 +31,7 @@ module.exports = {
      return message.lineReply({
       embed: {
        color: 5294200,
-       description: "😁 | Oh, you tried to spank me but u can't... Im not real... Snap back to reality -.-",
+       description: ":blush: | Oh, you tried to spank me but u can't... Im not real... Snap back to reality -,-",
       },
      });
     }
