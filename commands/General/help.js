@@ -30,7 +30,7 @@ module.exports = {
          { name: ':toolbox:Utility', value: '\`\`\`Avatar\, calculator\, discordjs\(djs\)/, emojify\, gdelete\, gend\, gfetch\, github\, giveaway\, greroll\, guild-avatar\, members\, serverinfo\, snipe\, userinfo \, weather\`\`\`', inline: true },
          { name: ':frame_with_picture:Image', value: '\`\`\`3000years\, affect\, approved\, beautiful\, blur\, cat\, changemymind\, circle\, contrast\, distort\, dog\, facepalm\, fire\, frame\, gay\, glass\, glitch\, heaven\, hitler\, invert\, jail\, jokeoverhead\, magik\, moustache\, ohno\, pixelize\, posterize\, reject\, rip\, sad\, scary\, sepia\, shit\, triggered\, trash\, utatoo\, wanted\, wasted\`\`\`', inline: true }
                )
-      .addField(":smirk:NSFW", "\`\`\` Anal\, ass\, blowjob\, boobs\, classic\, cum\, ero\, erofeet\, eroneko\, eroyuri\, feet\, femdom\, foxgirl\, furry\, futa\, hentai\, pussy\, spank\`\`\`") 
+      .addField(":smirk:NSFW", "\`\`\`Anal\, ass\, blowjob\, boobs\, classic\, cum\, ero\, erofeet\, eroneko\, eroyuri\, feet\, femdom\, foxgirl\, furry\, futa\, hentai\, pussy\, spank\`\`\`") 
       .addField(":grey_question: Command Information", `${prefix} help <command>`)
       .setTimestamp()
       .setFooter(
@@ -77,7 +77,7 @@ module.exports = {
       .addField("Usage", `\`${prefix} ${cmd.usage}\``)
       .addField("Description", `\`${cmd.description}\``)
       .addField("Aliases", `\`${alliaseslist}\``)
-      // .setDescription("Category: `" + cmd.category + "`\n Description: `" + cmd.description + "`\n Usage: `" + prefix + " " + cmd.usage + "`\n Aliases: `" + alliaseslist + "`")
+      .setDescription("Category: `" + cmd.category + "`\n Description: `" + cmd.description + "`\n Usage: `" + prefix + " " + cmd.usage + "`\n Aliases: `" + alliaseslist + "`")
       .setFooter(
        "Syntax: <> = required, [] = optional | Requested by " + `${message.author.username}`,
        message.author.displayAvatarURL({
