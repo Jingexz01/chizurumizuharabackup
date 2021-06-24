@@ -27,13 +27,13 @@ module.exports = {
          { name: 'Bot Commands', value: 'Overall Bot Commands | 7 Categories' },
          { name: ':tools:Moderation Commands\(15\)', value: '\`\`\`Ban\, Check-leave\, Check-log\, Check-welcome\, del-leave\, del-log\, del-welcome\, id\, kick\, prune\, say\, set-leave\, set-log\, set-welcome\, unban\`\`\`', inline: true },
          { name: '💬General\(11\)', value: '\```Dashboard\, dependecies\, eval\, help\, info\, invite\, ping\, servers\, shell\, suggest\, uptime\`\`\`', inline: true },
-         { name: ':toolbox:Utility\(16\)', value: '\`\`\`Avatar\, calculator\, discordjs\(djs\)/, emojify\, gdelete\, gend\, gfetch\, github\, giveaway\, greroll\, guild-avatar\, members\, serverinfo\, snipe\, userinfo \, weather\`\`\`', inline: true },
+         { name: ':toolbox:Utility\(16\)', value: '\`\`\`Avatar\, calculator\, discordjs\(djs\), emojify\, gdelete\, gend\, gfetch\, github\, giveaway\, greroll\, guild-avatar\, members\, serverinfo\, snipe\, userinfo \, weather\`\`\`', inline: true },
          { name: ':frame_with_picture:Image\(38\)', value: '\`\`\`3000years\, affect\, approved\, beautiful\, blur\, cat\, changemymind\, circle\, contrast\, distort\, dog\, facepalm\, fire\, frame\, gay\, glass\, glitch\, heaven\, hitler\, invert\, jail\, jokeoverhead\, magik\, moustache\, ohno\, pixelize\, posterize\, reject\, rip\, sad\, scary\, sepia\, shit\, triggered\, trash\, utatoo\, wanted\, wasted\`\`\`', inline: true }
                )
       .addField(":smirk:NSFW\(18\)", "\`\`\`Anal\, ass\, blowjob\, boobs\, classic\, cum\, ero\, erofeet\, eroneko\, eroyuri\, feet\, femdom\, foxgirl\, furry\, futa\, hentai\, pussy\, spank\`\`\`")
       .addField(":tada:Fun\(30\)", "\`\`\`4chan\, advice\, anime\, ascii\, baka\, beep\, boop\, cat-emoji\, chat\, cuddle\, dice\, eightball\, flatearth\, flipcoin\, fliptext\, hug\, iq\, joke\, kill\, kiss\, meme\, pat\, pepe\, poke\, rate\, ship\, slap\, sneeze\, tickle\, wallpaper\`\`\`")
       .addField(":notes:Music\(12\)", "\`\`\`filter\, lyrics\, nowplaying\, pause\, play\, queue\, resume\, search\, shuffle\, skip\, stop\, volume\`\`\`")
-      .addField(":question: Help tips", "If you need help on command information then use `${prefix}`chelp <command>")
+      .addField(":question: Help tips", `If you need help on command information use ${prefix}chelp <command>`)
       .setTimestamp()
       .setFooter(
      "Requested by " + `${message.author.username}` + " | " + `${client.commands.size}` + " Commands",
