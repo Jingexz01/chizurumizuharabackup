@@ -25,10 +25,11 @@ module.exports = {
      .setColor("RANDOM")
      .addFields(
          { name: 'Bot Commands', value: 'Overall Bot Commands' },
-         { name: ':tools:Moderation Commands', value: '\`\`\`Ban\, Check-leave\, Check-log\, Check-welcome\, del-leave\, del-log\, del-welcome\, id\, kick\, prune\, say\, set-leave\, set-log\, set-welcome\, unban\`', inline: true },
-         { name: '💬General', value: '\`\`\`Dashboard\, dependecies\, eval\, help\, info\, invite\, ping\, servers\, shell\, suggest\, uptime\`', inline: true },
-         { name: ':toolbox:Utility', value: '\`\`\`Avatar\, calculator\, discordjs\(djs\)/, emojify\, gdelete\, gend\, gfetch\, github\, giveaway\, greroll\, guild-avatar\, members\, serverinfo\, snipe\, userinfo \, weather\`', inline: true },
-         { name: ':frame_with_picture:Image', value: '\`\`\`3000years\, affect\, approved\, beautiful\, blur\, cat\, changemymind\, circle\, contrast\, distort\, dog\, facepalm\, fire\, frame\, gay\, glass\, glitch\, heaven\, hitler\, invert\, jail\, jokeoverhead\, magik\, moustache\, ohno\, pixelize\, posterize\, reject\, rip\, sad\, scary\, sepia\, shit\, triggered\, trash\, utatoo\, wanted\, wasted\`', inline: true }
+         { name: ':tools:Moderation Commands', value: '\`\`\`Ban\, Check-leave\, Check-log\, Check-welcome\, del-leave\, del-log\, del-welcome\, id\, kick\, prune\, say\, set-leave\, set-log\, set-welcome\, unban\`\`\`', inline: true },
+         { name: '💬General', value: '\```Dashboard\, dependecies\, eval\, help\, info\, invite\, ping\, servers\, shell\, suggest\, uptime\`\`\`', inline: true },
+         { name: ':toolbox:Utility', value: '\`\`\`Avatar\, calculator\, discordjs\(djs\)/, emojify\, gdelete\, gend\, gfetch\, github\, giveaway\, greroll\, guild-avatar\, members\, serverinfo\, snipe\, userinfo \, weather\`\`\`', inline: true },
+         { name: ':frame_with_picture:Image', value: '\`\`\`3000years\, affect\, approved\, beautiful\, blur\, cat\, changemymind\, circle\, contrast\, distort\, dog\, facepalm\, fire\, frame\, gay\, glass\, glitch\, heaven\, hitler\, invert\, jail\, jokeoverhead\, magik\, moustache\, ohno\, pixelize\, posterize\, reject\, rip\, sad\, scary\, sepia\, shit\, triggered\, trash\, utatoo\, wanted\, wasted\`\`\`', inline: true }
+         { name: ':smirk: NSWF', value: '\`\`\` Anal\, ass\, blowjob\, boobs\, classic\, cum\, ero\, erofeet\, eroneko\, eroyuri\, feet\, femdom\, foxgirl\, furry\, futa\, hentai\, pussy\, spank\`\`\`', inline: true }
               )
       .addField(":grey_question: Command Information", `${prefix} help <command>`)
       .setTimestamp()
