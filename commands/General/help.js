@@ -25,6 +25,7 @@ module.exports = {
      .setColor("RANDOM")
      .setTimestamp()
      .addField({ name: 'Bot Commands', value: 'Overall Bot Commands' })
+     .addBlankField()
      .addField({ name: ':tools:Moderation Commands', value: '\`Ban\, Check-leave\, Check-log\, Check-welcome\, del-leave\, del-log\, del-welcome\, id\, kick\, prune\, say\, set-leave\, set-log\, set-welcome\, unban', inline: true })
      .addField({ name: '💬General', value: '\`Dashboard\, dependecies\, eval\, help\, info\, invite\, ping\, servers\, shell\, suggest\, uptime', inline: true })
      .addField({ name: ':toolbox:Utility', value: '\`Avatar\, calculator\, discordjs\(djs\)/, emojify\, gdelete\, gend\, gfetch\, github\, giveaway\, greroll\, guild-avatar\, members\, serverinfo\, snipe\, userinfo \, weather', inline: true })
