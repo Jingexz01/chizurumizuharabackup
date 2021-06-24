@@ -9,6 +9,16 @@ module.exports = {
  usage: "spank <user>",
  run: async (client, message, args) => {
   const user = (await message.mentions.members.first()) || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find((r) => r.user.username.toLowerCase().includes() === args.join(" ").toLocaleLowerCase()) || message.guild.members.cache.find((r) => r.displayName.toLowerCase().includes() === args.join(" ").toLocaleLowerCase());
+  (async () => {
+   try {
+    if (!message.channel.nsfw) {
+     const nsfwembed = new Discord.MessageEmbed()
+      .setColor("#FF5757")
+      .setDescription("💢 | You can use this command only in an NSFW Channel!")
+      .setFooter("Requested by " + message.author.username, message.author.displayAvatarURL())
+      .setImage("https://media.discordapp.net/attachments/721019707607482409/855827123616481300/nsfw.gif");
+     return message.lineReply(nsfwembed);
+    }
   if (!user) {
    return message.lineReply({
     embed: {
