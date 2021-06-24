@@ -2,11 +2,11 @@ const Discord = require("discord.js");
 const fetch = require("node-fetch");
 
 module.exports = {
- name: "cuddle",
+ name: "spank",
  aliases: [],
- description: "Spank the mentioned user",
- category: "Fun",
- usage: "cuddle <user>",
+ description: "Spank the mentioned user. Use this only on a NSFW channel!",
+ category: "NSFW",
+ usage: "spank <user>",
  run: async (client, message, args) => {
   (async () => {
    try {
