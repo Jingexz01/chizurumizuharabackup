@@ -15,7 +15,7 @@ module.exports = {
     return message.lineReply({
      embed: {
       color: 16734039,
-      description: "❌ | You do not have permission to run this command (Only owner of the bot can run this)!",
+      description: "❌ | You do not have permission to run this command (Only the owner of the bot can use this command)!",
      },
     });
    }
@@ -24,7 +24,7 @@ module.exports = {
     return message.lineReply({
      embed: {
       color: 16734039,
-      description: "❌ | Please input some string!",
+      description: "❌ | Please input some string or commands!",
      },
     });
    }
@@ -40,15 +40,15 @@ module.exports = {
     const embed = new Discord.MessageEmbed() // Prettier
      .setColor("RANDOM")
      .setTitle("📝 Shell")
-     .addField("📤 Request", "```" + command + "```")
-     .addField("📥 Server response", `\`\`\`${res.slice(0, 1000) || "No response!"}\`\`\``);
+     .addField("📤 Command Request", "```" + command + "```")
+     .addField("📥 Server Command  Response", `\`\`\`${res.slice(0, 1000) || "No response!"}\`\`\``);
     message.lineReply(embed);
    });
   } catch (err) {
    message.lineReply({
     embed: {
      color: 16734039,
-     description: "Something went wrong... :cry:",
+     description: "Sorry something went wrong, Please try again later.",
     },
    });
   }
