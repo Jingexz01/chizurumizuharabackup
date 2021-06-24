@@ -4,10 +4,10 @@ const config = require("../../config");
 const prefix = process.env.PREFIX;
 
 module.exports = {
- name: "",
- aliases: ["h2", "commands2"],
+ name: "chelp",
+ aliases: ["h2", "commands2, command2"],
  category: "General",
- description: "Displays all the commands available",
+ description: "Displays the command info.",
  timeout: "10000",
  usage: "help2 [command]",
  run: async (client, message, args) => {
