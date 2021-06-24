@@ -33,7 +33,7 @@ module.exports = {
      .setColor("RANDOM")
      .setTitle(user.username + " just got tickled by " + message.author.username)
      .setFooter(
-      "._. | Requested by " + `${message.author.username}`,
+      ":3 | Requested by " + `${message.author.username}`,
       message.author.displayAvatarURL({
        dynamic: true,
        format: "png",
