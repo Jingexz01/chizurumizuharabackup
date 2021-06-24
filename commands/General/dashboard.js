@@ -27,7 +27,7 @@ module.exports = {
    }
    if (message.member.hasPermission("MANAGE_GUILD")) {
     const embed = new Discord.MessageEmbed() // Prettier()
-     .setTitle("<:blush:> Yay!")
+     .setTitle(":blush: Yay!")
      .setDescription("🔗 Your server link: " + process.env.DOMAIN + "/dashboard/" + message.guild.id + "\n🔗 Dashboard link: https://chizuru-mizuhara-database.herokuapp.com/dashboard")
      .setTimestamp()
      .setColor("RANDOM")
@@ -42,7 +42,7 @@ module.exports = {
     message.lineReply(embed);
    } else {
     const embed = new Discord.MessageEmbed() // Prettier()
-     .setTitle("<:blush:> Yay!")
+     .setTitle(":blush: Yay!")
      .setDescription("🔗 Our dashboard link: https://chizuru-mizuhara-database.herokuapp.com/dashboard")
      .setTimestamp()
      .setColor("RANDOM")
