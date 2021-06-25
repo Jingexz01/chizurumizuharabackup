@@ -1,11 +1,11 @@
 const Discord = require("discord.js");
 
 module.exports = {
- name: "uptime",
- aliases: ["bot", "botuptime"],
- description: "Display a bot uptime",
+ name: "botstat",
+ aliases: ["botstats", "botstatistic"],
+ description: "Display a bot stats",
  category: "General",
- usage: "uptime",
+ usage: "stats",
  run: async (client, message, args) => {
   try {
 const embed = new Discord.MessageEmbed()
@@ -23,7 +23,7 @@ message.lineReply(embed);
    message.lineReply({
     embed: {
      color: 16734039,
-     description: "Something went wrong... :cry:",
+     description: "Sorry something went wrong, Please try again later.",
     },
    });
   }
