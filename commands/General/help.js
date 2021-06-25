@@ -27,7 +27,7 @@ module.exports = {
          { name: 'Bot Commands', value: 'Overall Bot Commands | 7 Categories' }
                )
       .addField(":tools:Moderation Commands\(15\)", "\`\`\`Ban\, Check-leave\, Check-log\, Check-welcome\, del-leave\, del-log\, del-welcome\, id\, kick\, prune\, say\, set-leave\, set-log\, set-welcome\, unban\`\`\`")
-      .addField("💬General\(11\)", "\`\`\`Dashboard\, dependencies\, eval\, help\, info\, invite\, ping\, servers\, shell\, suggest\, uptime\`\`\`")
+      .addField("💬General\(11\)", "\`\`\`botstats\, dashboard\, dependencies\, eval\, help\, info\, invite\, ping\, servers\, shell\, suggest\, uptime\`\`\`")
       .addField(":toolbox:Utility\(16\)", "\`\`\`Avatar\, calculator\, discordjs\(djs\), emojify\, gdelete\, gend\, gfetch\, github\, giveaway\, greroll\, guild-avatar\, members\, serverinfo\, snipe\, userinfo \, weather\`\`\`")
       .addField(":frame_with_picture:Image\(38\)", "\`\`\`3000years\, affect\, approved\, beautiful\, blur\, cat\, changemymind\, circle\, contrast\, distort\, dog\, facepalm\, fire\, frame\, gay\, glass\, glitch\, heaven\, hitler\, invert\, jail\, jokeoverhead\, magik\, moustache\, ohno\, pixelize\, posterize\, reject\, rip\, sad\, scary\, sepia\, shit\, triggered\, trash\, utatoo\, wanted\, wasted\`\`\`")
       .addField(":smirk:NSFW\(18\)", "\`\`\`Anal\, ass\, blowjob\, boobs\, classic\, cum\, ero\, erofeet\, eroneko\, eroyuri\, feet\, femdom\, foxgirl\, furry\, futa\, hentai\, pussy\, spank\`\`\`")
