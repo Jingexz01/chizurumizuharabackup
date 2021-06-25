@@ -23,7 +23,7 @@ module.exports = {
      return message.lineReply({
       embed: {
        color: 5294200,
-       description: "😁 | You can't hug yourself but... Ok, get the hug from me ＼( ^o^ )／ !",
+       description: "😁 | You can't hug yourself but... Ok, get the hug from me (づ｡◕‿‿◕｡)づ !",
       },
      });
     }
@@ -31,7 +31,7 @@ module.exports = {
      return message.lineReply({
       embed: {
        color: 5294200,
-       description: "😁 | Oh, you tried to hug me but u can't... Im not real... But I can hug you ＼( ^o^ )／",
+       description: "😁 | Oh, you tried to hug me but u can't... Im not real... But I can hug you (づ｡◕‿‿◕｡)づ",
       },
      });
     }
@@ -50,7 +50,7 @@ module.exports = {
      .setColor("RANDOM")
      .setDescription(user.toString() + " got a hug from " + message.author.toString())
      .setFooter(
-      "Requested by " + `${message.author.username}` + " • (this is so cute ＼( ^o^ )／)",
+      "Requested by " + `${message.author.username}` + " • (this is so cute (づ｡◕‿‿◕｡)づ)",
       message.author.displayAvatarURL({
        dynamic: true,
        format: "png",
@@ -64,7 +64,7 @@ module.exports = {
     message.lineReply({
      embed: {
       color: 16734039,
-      description: "Something went wrong... :cry:",
+      description: "Sorry something went wrong, Please try again later.",
      },
     });
    }
