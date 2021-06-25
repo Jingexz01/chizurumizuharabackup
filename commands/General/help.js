@@ -25,11 +25,15 @@ module.exports = {
      .setColor("RANDOM")
      .addFields(
          { name: 'Bot Commands', value: 'Overall Bot Commands | 7 Categories' },
-         { name: ':tools:Moderation Commands\(15\)', value: '\`\`\`Ban\, Check-leave\, Check-log\, Check-welcome\, del-leave\, del-log\, del-welcome\, id\, kick\, prune\, say\, set-leave\, set-log\, set-welcome\, unban\`\`\`', inline: true },
-         { name: '💬General\(11\)', value: '\```Dashboard\, dependencies\, eval\, help\, info\, invite\, ping\, servers\, shell\, suggest\, uptime\`\`\`', inline: true },
-         { name: ':toolbox:Utility\(16\)', value: '\`\`\`Avatar\, calculator\, discordjs\(djs\), emojify\, gdelete\, gend\, gfetch\, github\, giveaway\, greroll\, guild-avatar\, members\, serverinfo\, snipe\, userinfo \, weather\`\`\`', inline: true },
-         { name: ':frame_with_picture:Image\(38\)', value: '\`\`\`3000years\, affect\, approved\, beautiful\, blur\, cat\, changemymind\, circle\, contrast\, distort\, dog\, facepalm\, fire\, frame\, gay\, glass\, glitch\, heaven\, hitler\, invert\, jail\, jokeoverhead\, magik\, moustache\, ohno\, pixelize\, posterize\, reject\, rip\, sad\, scary\, sepia\, shit\, triggered\, trash\, utatoo\, wanted\, wasted\`\`\`', inline: true }
+         { name: ':tools:Moderation Commands\(15\)', value: 't', inline: false },
+         { name: 't', value: 't', inline: false },
+         { name: 't', value: 't', inline: false },
+         { name: 't', value: 't', inline: false }
                )
+      .addField(":tools:Moderation Commands\(15\)", "\`\`\`Ban\, Check-leave\, Check-log\, Check-welcome\, del-leave\, del-log\, del-welcome\, id\, kick\, prune\, say\, set-leave\, set-log\, set-welcome\, unban\`\`\`")
+      .addField("💬General\(11\)", "\`\`\`Dashboard\, dependencies\, eval\, help\, info\, invite\, ping\, servers\, shell\, suggest\, uptime\`\`\`")
+      .addField(":toolbox:Utility\(16\)", "\`\`\`Avatar\, calculator\, discordjs\(djs\), emojify\, gdelete\, gend\, gfetch\, github\, giveaway\, greroll\, guild-avatar\, members\, serverinfo\, snipe\, userinfo \, weather\`\`\`")
+      .addField(":frame_with_picture:Image\(38\)", "\`\`\`3000years\, affect\, approved\, beautiful\, blur\, cat\, changemymind\, circle\, contrast\, distort\, dog\, facepalm\, fire\, frame\, gay\, glass\, glitch\, heaven\, hitler\, invert\, jail\, jokeoverhead\, magik\, moustache\, ohno\, pixelize\, posterize\, reject\, rip\, sad\, scary\, sepia\, shit\, triggered\, trash\, utatoo\, wanted\, wasted\`\`\`")
       .addField(":smirk:NSFW\(18\)", "\`\`\`Anal\, ass\, blowjob\, boobs\, classic\, cum\, ero\, erofeet\, eroneko\, eroyuri\, feet\, femdom\, foxgirl\, furry\, futa\, hentai\, pussy\, spank\`\`\`")
       .addField(":tada:Fun\(30\)", "\`\`\`4chan\, advice\, anime\, ascii\, baka\, beep\, boop\, cat-emoji\, chat\, cuddle\, dice\, eightball\, flatearth\, flipcoin\, fliptext\, hug\, iq\, joke\, kill\, kiss\, meme\, pat\, pepe\, poke\, rate\, ship\, slap\, sneeze\, tickle\, wallpaper\`\`\`")
       .addField(":notes:Music\(12\)", "\`\`\`filter\, lyrics\, nowplaying\, pause\, play\, queue\, resume\, search\, shuffle\, skip\, stop\, volume\`\`\`")
