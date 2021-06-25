@@ -24,11 +24,7 @@ module.exports = {
      .setAuthor("Help", message.guild.iconURL())
      .setColor("RANDOM")
      .addFields(
-         { name: 'Bot Commands', value: 'Overall Bot Commands | 7 Categories' },
-         { name: ':tools:Moderation Commands\(15\)', value: 't', inline: false },
-         { name: 't', value: 't', inline: false },
-         { name: 't', value: 't', inline: false },
-         { name: 't', value: 't', inline: false }
+         { name: 'Bot Commands', value: 'Overall Bot Commands | 7 Categories' }
                )
       .addField(":tools:Moderation Commands\(15\)", "\`\`\`Ban\, Check-leave\, Check-log\, Check-welcome\, del-leave\, del-log\, del-welcome\, id\, kick\, prune\, say\, set-leave\, set-log\, set-welcome\, unban\`\`\`")
       .addField("💬General\(11\)", "\`\`\`Dashboard\, dependencies\, eval\, help\, info\, invite\, ping\, servers\, shell\, suggest\, uptime\`\`\`")
