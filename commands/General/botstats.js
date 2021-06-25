@@ -14,7 +14,7 @@ const embed = new Discord.MessageEmbed()
 .setTimestamp()
 .setFooter("Chizuru Mizuhara")
 .setColor("GREEN")
-.addField("Bot Developer", "\`\`\`Jingexz01#2841\`\`\`")
+.addField("Bot Developer \| Bot Coder", "\`\`\`Jingexz01#2841\`\`\`")
 .addField("Official Bot Release Date", "\`\`\`November 11, 2020\`\`\`")
 .addField("Bot Dashboard", `[Click Here](https://chizuru-mizuhara-database.herokuapp.com/dashboard)`)
 .addField("Bot Backup Dashboard\`\`\`(This will only work when bot is under backup launch)\`\`\`", `[Click Here](https://chizuru-mizuhara-databasebu.herokuapp.com)`);
