@@ -2,11 +2,11 @@ const Discord = require("discord.js");
 const fetch = require("node-fetch");
 
 module.exports = {
- name: "tickle",
+ name: "",
  aliases: [],
- description: "Tickle a user",
- category: "Fun",
- usage: "tickle <user>",
+ description: "",
+ category: "",
+ usage: " <user>",
  run: async (client, message, args) => {
   try {
    const member = (await await message.mentions.members.first()) || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find((r) => r.user.username.toLowerCase().includes() === args.join(" ").toLocaleLowerCase()) || message.guild.members.cache.find((r) => r.displayName.toLowerCase().includes() === args.join(" ").toLocaleLowerCase());
