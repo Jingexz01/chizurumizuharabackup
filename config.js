@@ -10,7 +10,7 @@ module.exports = {
  author: "Jingexz01 (Jingexz01#2841)",
  ownerid: "708159504352673805",
  github: "Jingexz01",
- repo: "majobot",
+ repo: "chizurumizuharabackup",
  domain: process.env.DOMAIN,
  google_analitics: process.env.ANALYTICS,
  clientSecret: process.env.SECRET,
