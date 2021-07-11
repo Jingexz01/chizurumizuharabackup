@@ -38,7 +38,7 @@ dependencies:
  uid-safe: 2.1.5
  weather-js: 2.0.0
  youtube-search: 1.1.4
- ytdl-core: 4.8.3
+ ytdl-core: 1.0.9
  ytsearcher: 1.2.2
 packages:
  /@babel/runtime/7.11.2:
