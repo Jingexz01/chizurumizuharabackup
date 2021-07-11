@@ -41,6 +41,7 @@ module.exports = {
     .addField("Channel Count", `${client.channels.cache.size}`, true)
     .addField("⏳ Bot System Uptime", `${duration}`, true)
     .addField("🏓 Websocket Ping", Math.round(client.ws.ping) + "ms", true)
+    .addField("Bot Network Ping", `${Date.now() - message.createdTimestamp} ms`, true)
     .addField("💻 Virtual Private Server (VPS) System Platform", osutils.platform(), true)
     .addField("Bot Dashboard Status", "\`Online\`", true)
     .addField("Bot Database Status", "\`Online\`", true)
