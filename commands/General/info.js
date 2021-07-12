@@ -45,7 +45,7 @@ module.exports = {
     .addField("💻 Virtual Private Server (VPS) System Platform", osutils.platform(), true)
     .addField("Bot Dashboard Status", "\`Online\`", true)
     .addField("Bot Database Status", "\`Online\`", true)
-    .addField("Dashboard Bind Port", `: ${ PORT }`, true)
+    .addField("Dashboard Bind Port", `${PORT}`, true)
     .addField("<a:node:857196363196137472> Node.js Version", `${process.version}`, true)
     .addField("🖥️CPU Sytem Cores", osutils.cpuCount() + " Cores", true)
     .addField("Total Sytem Memory Storage", "500 MB", true)
