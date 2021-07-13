@@ -57,6 +57,7 @@ module.exports = {
      requestOptions: {
       headers: {
        Cookie: config.cookies,
+       TOKEN: config.YOUTUBE,
        ID_TOKEN: config.youtube,
       },
      },
@@ -164,17 +165,17 @@ module.exports = {
     .setTimestamp()
     .setThumbnail(song.thumbnail.url);
    var playingMessage = await queue.textChannel.send(embed);
-   /* await playingMessage.react("⏭");
-   await playingMessage.react("⏯");
-   await playingMessage.react("🔉");
-   await playingMessage.react("🔊");
-   await playingMessage.react("🔇");
-   await playingMessage.react("🔁");
-   await playingMessage.react("🔀");
-   await playingMessage.react("⏹");
-   await playingMessage.react("🎵");
-   await playingMessage.react("🎶");
-   await playingMessage.react("📑");
+   /* await playingMessage.react(":next_track:");
+   await playingMessage.react(":play_pause:");
+   await playingMessage.react(":sound:");
+   await playingMessage.react(":loud_sound:");
+   await playingMessage.react(":mute:");
+   await playingMessage.react(":repeat:");
+   await playingMessage.react(":twisted_rightwards_arrows:");
+   await playingMessage.react(":stop_button:");
+   await playingMessage.react(":musical_note:");
+   await playingMessage.react(":notes:");
+   await playingMessage.react(":spiral_note_pad:");
    */
   } catch (error) {
    console.error(error);
@@ -197,7 +198,7 @@ module.exports = {
    }
 
    switch (reaction.emoji.name) {
-    case "⏭":
+    case ":next_track:":
      queue.playing = true;
      reaction.users.remove(user)
      if (!canModifyQueue(member)) return;
@@ -212,7 +213,7 @@ module.exports = {
      })
      break;
 
-    case "⏯":
+    case ":play_pause:":
      reaction.users.remove(user)
      if (!canModifyQueue(member)) return;
      if (queue.playing) {
@@ -235,7 +236,7 @@ module.exports = {
      })
      break;
 
-    case "🔇":
+    case ":mute:":
      reaction.users.remove(user)
      if (!canModifyQueue(member)) return;
      if (queue.volume <= 0) {
@@ -261,7 +262,7 @@ module.exports = {
      }
      break;
 
-    case "🔉":
+    case ":sound:":
      reaction.users.remove(user)
      if (!canModifyQueue(member)) return;
      if (queue.volume - 10 <= 0) queue.volume = 0;
@@ -276,7 +277,7 @@ module.exports = {
      })
      break;
 
-    case "🔊":
+    case ":loud_sound:":
      reaction.users.remove(user)
      if (!canModifyQueue(member)) return;
      if (queue.volume + 10 >= 100) queue.volume = 100;
@@ -291,7 +292,7 @@ module.exports = {
      })
      break;
 
-    case "🔁":
+    case ":repeat:":
      reaction.users.remove(user)
      if (!canModifyQueue(member)) return;
      queue.loop = !queue.loop;
@@ -304,7 +305,7 @@ module.exports = {
      })
      break;
 
-    case "⏹":
+    case ":stop_button:":
      reaction.users.remove(user)
      if (!canModifyQueue(member)) return;
      queue.songs = [];
@@ -328,7 +329,7 @@ module.exports = {
      reaction.users.remove(user)
      break;
 
-    case "🔀":
+    case ":twisted_rightwards_arrows:":
      reaction.users.remove(user)
      if (!queue) {
       const errormsg = await message.channel.send({embed: {
@@ -356,7 +357,7 @@ module.exports = {
      })
      break;
 
-    case "🎵":
+    case ":musical_note:":
      reaction.users.remove(user)
      const song = queue.songs[0];
      let minutes = song.duration.split(":")[0];
@@ -400,7 +401,7 @@ module.exports = {
      }
      break;
 
-    case "🎶":
+    case ":notes:":
      reaction.users.remove(user)
      const description = queue.songs.map((song, index) => `${index + 1}. ${Discord.escapeMarkdown(song.title)}`);
 
@@ -424,7 +425,7 @@ module.exports = {
      });
      break;
 
-    case "📑":
+    case ":spiral_note_pad:":
      reaction.users.remove(user)
      if (!canModifyQueue(member)) return;
      let lyrics = null;
