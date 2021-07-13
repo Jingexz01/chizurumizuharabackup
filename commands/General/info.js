@@ -12,6 +12,14 @@ module.exports = {
  usage: "info",
  run: async (client, message, args) => {
   try {
+   if (message.author.id !== config.ownerid) {
+    return message.lineReply({
+     embed: {
+      color: 16734039,
+      description: "❌ | You do not have permission to run this command (Only the owner of the bot can use this command)!",
+     },
+    });
+   }
    if (process.env.DOMAIN) {
     webpanel = `[Dashboard](${process.env.DOMAIN}) |`;
    } else {
