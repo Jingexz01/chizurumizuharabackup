@@ -12,13 +12,13 @@ module.exports = {
  usage: "info",
  run: async (client, message, args) => {
   try {
-   if (message.author.id !== config.ownerid) {
-    return message.lineReply({
-     embed: {
-      color: 16734039,
-      description: "❌ | You do not have permission to run this command (Only the owner of the bot can use this command)!",
-     },
-    });
+   if (process.env.DOMAIN) {
+    webpanel = `[Dashboard](${process.env.DOMAIN}) |`;
+   } else {
+    webpanel = " ";
+   }
+   function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
    }
    const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
    const embed = new Discord.MessageEmbed() // Prettier()
