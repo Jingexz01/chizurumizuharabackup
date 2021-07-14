@@ -31,7 +31,7 @@ module.exports = {
     )
     .setColor("RANDOM")
     .setDescription(`My global prefix is: \`${process.env.PREFIX}\`\n`)
-    .addField("<a:verified:852765188067164162> Developer", `<@${config.author}> \[[Website](${config.authorwebsite})\]`)
+    .addField("<a:verified:852765188067164162> Developer", `${config.author} \[[Website](${config.authorwebsite})\]`)
     .setThumbnail(
      client.user.displayAvatarURL({
       dynamic: true,
@@ -46,13 +46,13 @@ module.exports = {
     .addField("🏓 Websocket Ping", Math.round(client.ws.ping) + "ms", true)
     .addField("Bot Network Ping", `${Date.now() - message.createdTimestamp} ms`, true)
     .addField("💻 Virtual Private Server (VPS) System Platform", osutils.platform(), true)
-    .addField("Bot Dashboard Status", "Online", true)
-    .addField("Bot Database Status", "Online", true)
+    .addField("Bot Dashboard Status", "\`Online\`", true)
+    .addField("Bot Database Status", "\`Online\`", true)
     .addField("Dashboard Bind Port", `Port: ${config.port}`, true)
     .addField("<a:node:857196363196137472> Node.js Version", `${process.version}`, true)
     .addField("🖥️CPU System Cores", osutils.cpuCount() + " Cores", true)
-    .addField("<:cpu:856174395436171294> CPU", "```" + os.cpus()[0].model.substring(0, os.cpus()[0].model.indexOf("CPU")) || "Intel Xeon (" + osutils.cpuCount() + " cores)" + "```")
-    .addField("Total Sytem Memory Storage", "500 MB", true)
+    .addField("<:cpu:856174395436171294> CPU", "\`" + os.cpus()[0].model.substring(0, os.cpus()[0].model.indexOf("CPU")) || "Intel Xeon (" + osutils.cpuCount() + " cores)" + "```")
+    .addField("Total Sytem Memory Storage", "\`500\`MB", true)
     .addField("💽Total Memory (RAM)", osutils.totalmem().toString().split(".")[0] + "." + osutils.totalmem().toString().split(".")[1].split("")[0] + osutils.totalmem().toString().split(".")[1].split("")[1] + "MB", true)
     .addField("💾RAM Usage | Virtual Private Server (VPS) | 6 GB Limit", `${(osutils.totalmem() - osutils.freemem()).toString().split(".")[0] + "." + (osutils.totalmem() - osutils.freemem()).toString().split(".")[1].split("")[0] + (osutils.totalmem() - osutils.freemem()).toString().split(".")[1].split("")[1]}/${osutils.totalmem().toString().split(".")[0] + "." + osutils.totalmem().toString().split(".")[1].split("")[0] + osutils.totalmem().toString().split(".")[1].split("")[1]}MB (${(100 - osutils.freememPercentage() * 100).toString().split(".")[0] + "." + (100 - osutils.freememPercentage() * 100).toString().split(".")[1].split("")[0] + (100 - osutils.freememPercentage() * 100).toString().split(".")[1].split("")[1]}%)`, true)
     .addField("💾RAM Usage (BOT) | 6 GB Limit", (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + "MB/" + osutils.totalmem().toString().split(".")[0] + "." + osutils.totalmem().toString().split(".")[1].split("")[0] + osutils.totalmem().toString().split(".")[1].split("")[1] + "MB", true)
