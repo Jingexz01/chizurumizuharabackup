@@ -57,7 +57,7 @@ module.exports = {
      requestOptions: {
       headers: {
        Cookie: config.cookies,
-       TOKEN: config.youtube,
+       ID_TOKEN: config.youtube,
       },
      },
      bitrate: 320,
