@@ -49,7 +49,7 @@ module.exports = {
     .addField("Bot Dashboard Status", "\`Online\`", true)
     .addField("Bot Database Status", "\`Online\`", true)
     .addField("Dashboard Bind Port", `Port: ${config.port}`, true)
-    .addField("<:node:857196363196137472> Node.js Version", `${process.version}`, true)
+    .addField("<a:node:857196363196137472> Node.js Version", `${process.version}`, true)
     .addField("🖥️CPU System Cores", osutils.cpuCount() + " Cores", true)
     .addField("Total Sytem Memory Storage", "\`500\`MB", true)
     .addField("💽Total Memory (RAM)", osutils.totalmem().toString().split(".")[0] + "." + osutils.totalmem().toString().split(".")[1].split("")[0] + osutils.totalmem().toString().split(".")[1].split("")[1] + "MB", true)
