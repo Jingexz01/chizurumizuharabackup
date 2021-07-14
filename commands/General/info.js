@@ -51,7 +51,6 @@ module.exports = {
     .addField("Dashboard Bind Port", `Port: ${config.port}`, true)
     .addField("<:node:857196363196137472> Node.js Version", `${process.version}`, true)
     .addField("🖥️CPU System Cores", osutils.cpuCount() + " Cores", true)
-    .addField("<:cpubot:857197712763256832> CPU", "```" + os.cpus()[0].model.substring(0, os.cpus()[0].model.indexOf("CPU")) || "Intel Xeon (" + osutils.cpuCount() + " cores)" + `\`\`\``)
     .addField("Total Sytem Memory Storage", "\`500\`MB", true)
     .addField("💽Total Memory (RAM)", osutils.totalmem().toString().split(".")[0] + "." + osutils.totalmem().toString().split(".")[1].split("")[0] + osutils.totalmem().toString().split(".")[1].split("")[1] + "MB", true)
     .addField("💾RAM Usage | Virtual Private Server (VPS) | 6 GB Limit", `${(osutils.totalmem() - osutils.freemem()).toString().split(".")[0] + "." + (osutils.totalmem() - osutils.freemem()).toString().split(".")[1].split("")[0] + (osutils.totalmem() - osutils.freemem()).toString().split(".")[1].split("")[1]}/${osutils.totalmem().toString().split(".")[0] + "." + osutils.totalmem().toString().split(".")[1].split("")[0] + osutils.totalmem().toString().split(".")[1].split("")[1]}MB (${(100 - osutils.freememPercentage() * 100).toString().split(".")[0] + "." + (100 - osutils.freememPercentage() * 100).toString().split(".")[1].split("")[0] + (100 - osutils.freememPercentage() * 100).toString().split(".")[1].split("")[1]}%)`, true)
