@@ -5,7 +5,7 @@ const osutils = require("os-utils");
 require("moment-duration-format");
 
 module.exports = {
- name: "information",
+ name: "informationn",
  aliases: ["botinformatiom", "clientinf", "statistics"],
  description: "Shows informations for developers",
  category: "General",
@@ -50,8 +50,8 @@ module.exports = {
     .addField("🏓 Websocket Ping", Math.round(client.ws.ping) + "ms", true)
     .addField("Bot Network Ping", Math.round(client.ws.ping) + "ms", true)
     .addField("💻 Virtual Private Server (VPS) System Platform", osutils.platform(), true)
-    .addField("Bot Dashboard Status", "\`Online\`, true)
-    .addField("Bot Database Status", "\`Online\`, true)
+    .addField("Bot Dashboard Status", "Online, true)
+    .addField("Bot Database Status", "Online, true)
     .addField("<a:node:857196363196137472> Node.js Version", `${process.version}`, true)
     .addField("🖥️CPU Sytem Cores", osutils.cpuCount() + " Cores", true)
     .addField("Total Sytem Memory Storage", "500 MB", true)
