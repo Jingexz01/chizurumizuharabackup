@@ -18,7 +18,7 @@ module.exports = {
      .setURL(body.url)
      .setColor("RANDOM")
      .setFooter(
-      "Requested by " + `${message.author.username}` + " • (this is so cute ＼( ^o^ )／)",
+      "Requested by " + `${message.author.username}` + " • (UwU :3 :))",
       message.author.displayAvatarURL({
        dynamic: true,
        format: "png",
